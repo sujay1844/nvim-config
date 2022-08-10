@@ -60,7 +60,7 @@ Credit to [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
 - Since neovim is a terminal application, pressing <kbd>Ctrl+D</kbd>, <kbd>Ctrl+U</kbd> and other vim movements can be unintuitive and can leave you lost.
 - Hence, smooth scrolling lets you follow the cursor more easily.
 
-<- GIF here ->
+https://user-images.githubusercontent.com/68642484/183983788-08bc0aa5-98fd-47fc-a0a7-e2ba07aefe60.mp4
 
 Credit to [karb94/neoscroll.nvim](https://github.com/karb94/neoscroll.nvim)
 
