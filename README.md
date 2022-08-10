@@ -7,7 +7,7 @@
 - Works for `""`, `''`, `[]`, `{}`, `()`, `\`\``
 - Add custom rules [here](./lua/user/autopairs.lua)
 
-<- GIF here ->
+https://user-images.githubusercontent.com/68642484/183982554-c639f928-70fa-4761-b402-da351b0bc05b.mp4
 
 Credit to [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs)
 
@@ -17,7 +17,7 @@ Credit to [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs)
 - Out of the box, supported languages include `python`, `bash`, `go`, `lua`, `yaml`, `html`, `json`, `markdown`
 - To add more languages refer [here](#installing-additional-languages)
 
-<- GIF here ->
+https://user-images.githubusercontent.com/68642484/183983072-8fde616a-a566-4c0a-a0da-7d65f904be4d.mp4
 
 Credit to [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 
@@ -26,13 +26,13 @@ Credit to [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - The theme [olimorris/onedarkpro.nvim](https://github.com/olimorris/onedarkpro.nvim) also supports `treesitter` integration
 - It can also highlight hex colors #RRGGBB, thanks to [norcalli/nvim-colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua)
 
-<- Screenshot here ->
+![nvim-syntax-highlighting](https://user-images.githubusercontent.com/68642484/183983113-ae363855-e9c6-4c37-94cb-f810df6a4d26.png)
 
 ## Comments
 - Commenting is handled by `treesitter`. Hence, it is context aware.
 - Press <kbd>Space</kbd><kbd>c</kbd><kbd>Space</kbd> to comment a line.
 
-<- GIF here ->
+https://user-images.githubusercontent.com/68642484/183983150-25f742a7-68c2-4a42-aa69-06b7cdaf8bac.mp4
 
 Credit to [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 
@@ -41,7 +41,7 @@ Credit to [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - It is very good to search files quickly.
 - If you have never used a fuzzy finder, try it. Highly recommended
 
-<- GIF here ->
+https://user-images.githubusercontent.com/68642484/183983323-16d504f8-0b0d-4f35-b589-807eee169981.mp4
 
 Credit to [vijaymarupudi/nvim-fzf](https://github.com/vijaymarupudi/nvim-fzf)
 
@@ -52,7 +52,7 @@ Credit to [vijaymarupudi/nvim-fzf](https://github.com/vijaymarupudi/nvim-fzf)
 ## Gitsigns
 - Indicators for added, changed and deleted lines is shown to the left of line numbers
 
-<- Screenshot here ->
+![nvim-gitsigns](https://user-images.githubusercontent.com/68642484/183983385-84144213-41bb-4019-aeee-c23fe195a757.png)
 
 Credit to [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
 
