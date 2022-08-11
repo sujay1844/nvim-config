@@ -88,6 +88,6 @@ Usercmd("RunBash", "!%", {})
 -- Exam mode
 Usercmd(
 	"MCQ",
-	"imap <CR> <Esc>jhxa | set nornu | CmpDisable",
+	"imap <CR> <Esc>j$a | set nornu | CmpDisable",
 	{}
 )
