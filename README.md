@@ -7,7 +7,7 @@
 - Works for `""`, `''`, `[]`, `{}`, `()`, `\`\``
 - Add custom rules [here](./lua/user/autopairs.lua)
 
-https://user-images.githubusercontent.com/68642484/183982554-c639f928-70fa-4761-b402-da351b0bc05b.mp4
+https://user-images.githubusercontent.com/68642484/184055996-aaac6799-71a7-4c3c-a95a-c1e350a648eb.mp4
 
 Credit to [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs)
 
@@ -17,7 +17,7 @@ Credit to [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs)
 - Out of the box, supported languages include `python`, `bash`, `go`, `lua`, `yaml`, `html`, `json`, `markdown`
 - To add more languages refer [here](#installing-additional-languages)
 
-https://user-images.githubusercontent.com/68642484/183983072-8fde616a-a566-4c0a-a0da-7d65f904be4d.mp4
+https://user-images.githubusercontent.com/68642484/184055953-d3f5ca03-2ddd-46b4-b3bc-9323b1df0cbc.mp4
 
 Credit to [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 
