@@ -1,7 +1,8 @@
 local vim = vim
 -- Loading VS code snippets
 local status_ok, vs_code = pcall(require, "luasnip.loaders.from_vscode")
-if status_ok then vs_code.lazy_load() end
+if status_ok then vs_code.lazy_load({ paths = { "./lua/user/snippets" }}) end
+-- if status_ok then vs_code.lazy_load() end
 
 -- Then our custom snippets
 local status_ok, ls = pcall(require, "luasnip")
@@ -115,3 +116,4 @@ vim.api.nvim_create_autocmd(
 		command = [[ source <afile> | echo "Snippets reloaded" ]]
 	}
 )
+

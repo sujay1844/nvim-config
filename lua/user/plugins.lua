@@ -31,7 +31,7 @@ packer.init {
   },
 }
 
-return require('packer').startup(function()
+local packer_nvim = function()
 	-- Packer managing itself
 	use 'wbthomason/packer.nvim'
 	-- :help packer
@@ -103,4 +103,17 @@ return require('packer').startup(function()
 	if packer_bootstrap then
 		require('packer').sync()
 	end
-end)
+end
+local packer_vscode = function()
+	use {
+        'nvim-treesitter/nvim-treesitter',
+        run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
+	}
+	use 'numToStr/Comment.nvim'
+end
+
+if vim.g.vscode then
+	return require('packer').startup(packer_vscode)
+else
+	return require('packer').startup(packer_nvim)
+end
