@@ -99,6 +99,9 @@ local packer_nvim = function()
 	-- Smooth scrolling
 	use 'karb94/neoscroll.nvim'
 
+	-- Tmux integration
+	use 'christoomey/vim-tmux-navigator'
+
 	-- Automatically set up packer for first time use
 	if packer_bootstrap then
 		require('packer').sync()

@@ -13,14 +13,15 @@ local keybindings = function ()
 	map('i', '<C-t>', '<Esc><Cmd>tabnew<CR><Cmd>FZF<CR>')
 
 	-- Tab navigation
-	map('n', '<A-h>', '<C-w>h')
-	map('n', '<A-j>', '<C-w>j')
-	map('n', '<A-k>', '<C-w>k')
-	map('n', '<A-l>', '<C-w>l')
-	map('i', '<A-h>', '<C-w>h')
-	map('i', '<A-j>', '<C-w>j')
-	map('i', '<A-k>', '<C-w>k')
-	map('i', '<A-l>', '<C-w>l')
+	map({'n', 'i', 'v'}, '<A-h>', '<C-w>h')
+	map({'n', 'i', 'v'}, '<A-j>', '<C-w>j')
+	map({'n', 'i', 'v'}, '<A-k>', '<C-w>k')
+	map({'n', 'i', 'v'}, '<A-l>', '<C-w>l')
+	vim.g.tmux_navigator_no_mappings = 1
+	map({'n', 'i', 'v'}, '<A-h>', ':TmuxNavigateLeft<CR>', { silent = true })
+	map({'n', 'i', 'v'}, '<A-j>', ':TmuxNavigateDown<CR>', { silent = true })
+	map({'n', 'i', 'v'}, '<A-k>', ':TmuxNavigateUp<CR>', { silent = true })
+	map({'n', 'i', 'v'}, '<A-l>', ':TmuxNavigateRight<CR>', { silent = true })
 
 	-- file-tree
 	map('n', '<leader>e', '<Cmd>wincmd v<bar> :Ex <CR><Cmd>FZF<CR>')
