@@ -68,6 +68,7 @@ local packer_nvim = function()
         'nvim-treesitter/nvim-treesitter',
         run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
     }-- :help treesitter
+	use 'nvim-treesitter/nvim-treesitter-context'
 
 	-- FZF (Fuzzy-finder)
 	use 'vijaymarupudi/nvim-fzf'

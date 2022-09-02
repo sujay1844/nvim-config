@@ -8,3 +8,4 @@ RUN addgroup tux && adduser -D -G tux tux
 USER tux
 RUN mkdir -p /home/tux/.config/nvim
 COPY --chown=tux:tux . /home/tux/.config/nvim/
+WORKDIR /home/tux
