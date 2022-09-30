@@ -20,6 +20,7 @@ local plugins = function ()
 	require("user.autopairs")
 	require("user.scroll")
 	require("user.telescope")
+	require("user.toggleterm")
 
 	-- Display hex colors
 	local status_ok, colorizer = pcall(require, "colorizer")

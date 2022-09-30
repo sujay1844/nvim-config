@@ -70,11 +70,6 @@ local packer_nvim = function()
     }-- :help treesitter
 	use 'nvim-treesitter/nvim-treesitter-context'
 
-	-- -- FZF (Fuzzy-finder)
-	-- use 'vijaymarupudi/nvim-fzf'
-	-- use 'junegunn/fzf.vim'
-	-- -- :help fzf
-
 	-- Telescope
 	use 'nvim-lua/plenary.nvim'
 	use {
@@ -113,7 +108,18 @@ local packer_nvim = function()
 	-- Tmux integration
 	use 'christoomey/vim-tmux-navigator'
 
-	use 'yazgoo/yank-history'
+	-- Git integration
+	use 'tpope/vim-fugitive'
+
+	-- Terminal integration
+	use {
+		'akinsho/toggleterm.nvim',
+	  config = function()
+		local status_ok, toggleterm = pcall(require, "toggleterm")
+		if status_ok then toggleterm.setup() end
+	  end
+	}
+
 	-- Automatically set up packer for first time use
 	if packer_bootstrap then
 		require('packer').sync()
