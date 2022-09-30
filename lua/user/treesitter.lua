@@ -6,6 +6,7 @@ local parsers = {
 	"fish",
 	"go",
 	"html",
+	"javascript",
 	"json",
 	"lua",
 	"markdown",
@@ -32,7 +33,7 @@ local cmd = vim.cmd
 set.foldmethod = "expr"
 set.foldexpr = "nvim_treesitter#foldexpr()"
 -- set.foldnestmax = 2
-set.foldminlines = 5
+set.foldminlines = 2
 set.foldenable = true
 -- set.foldcolumn = "0"
 

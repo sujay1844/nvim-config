@@ -9,8 +9,8 @@ local keybindings = function ()
 	map('n', '<leader>q', '<Cmd>q<CR>')
 
 	-- Create a new tab
-	map('n', '<C-t>', '<Cmd>tabnew<CR><Cmd>FZF<CR>')
-	map('i', '<C-t>', '<Esc><Cmd>tabnew<CR><Cmd>FZF<CR>')
+	map('n', '<C-t>', '<Cmd>tabnew<CR><Cmd>Telescope oldfiles<CR>')
+	map('i', '<C-t>', '<Esc><Cmd>tabnew<CR><Cmd>Telescope oldfiles<CR>')
 
 	-- Tab navigation
 	map({'n', 'i', 'v'}, '<A-h>', '<C-w>h')
@@ -23,12 +23,20 @@ local keybindings = function ()
 	map({'n', 'i', 'v'}, '<A-k>', ':TmuxNavigateUp<CR>', { silent = true })
 	map({'n', 'i', 'v'}, '<A-l>', ':TmuxNavigateRight<CR>', { silent = true })
 
-	-- file-tree
-	map('n', '<leader>e', '<Cmd>wincmd v<bar> :Ex <CR><Cmd>FZF<CR>')
-	map('n', '<leader>f', '<Cmd>Ex<CR>')
+	-- Telescope
+	map('n', '<leader>ff', '<Cmd>Telescope find_files<CR>')
+	map('n', '<leader>fb', '<Cmd>Telescope file_browser<CR>')
+	map('n', '<leader>fr', '<Cmd>Telescope oldfiles<CR>')
+	map('n', '<leader>fe', '<Cmd>Telescope symbols<CR>')
+	map('n', '<leader>fs', '<Cmd>Telescope spell_suggest<CR>')
+	map('n', '<leader>fi', '<Cmd>Telescope builtin<CR>')
 
-	-- FZF
-	map('n', '<A-f>', '<Cmd>FZF<CR>')
+	-- fuzzy finder
+	map('n', '<A-f>', '<Cmd>Telescope find_files<CR>')
+	map('n', '<leader>g', '<Cmd>Telescope live_grep<CR>')
+
+	-- Terminal
+	map('t', '<Esc>', '<C-\\><C-n>')
 end
 
 if not vim.g.vscode then

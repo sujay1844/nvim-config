@@ -1,0 +1,7 @@
+{
+	"shebang": {
+		"prefix": "shebang",
+		"body": "///usr/bin/true; exec /usr/bin/env go run \"\\$0\" \"$@\"",
+		"description": "Shebang for golang"
+	}
+}

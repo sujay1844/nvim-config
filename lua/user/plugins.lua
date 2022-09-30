@@ -1,4 +1,3 @@
--- PLUGINS
 local vim = vim
 
 -- Install packer automatically on first use
@@ -32,6 +31,7 @@ packer.init {
 }
 
 local packer_nvim = function()
+	local use = use
 	-- Packer managing itself
 	use 'wbthomason/packer.nvim'
 	-- :help packer
@@ -70,9 +70,19 @@ local packer_nvim = function()
     }-- :help treesitter
 	use 'nvim-treesitter/nvim-treesitter-context'
 
-	-- FZF (Fuzzy-finder)
-	use 'vijaymarupudi/nvim-fzf'
-	-- :help fzf
+	-- -- FZF (Fuzzy-finder)
+	-- use 'vijaymarupudi/nvim-fzf'
+	-- use 'junegunn/fzf.vim'
+	-- -- :help fzf
+
+	-- Telescope
+	use 'nvim-lua/plenary.nvim'
+	use {
+		'nvim-telescope/telescope.nvim',
+		requires = {{'nvim-lua/plenary.nvim'}}
+	}
+	use 'nvim-telescope/telescope-file-browser.nvim'
+	use 'nvim-telescope/telescope-symbols.nvim'
 
 	-- Icons
 	use 'kyazdani42/nvim-web-devicons'
@@ -103,12 +113,14 @@ local packer_nvim = function()
 	-- Tmux integration
 	use 'christoomey/vim-tmux-navigator'
 
+	use 'yazgoo/yank-history'
 	-- Automatically set up packer for first time use
 	if packer_bootstrap then
 		require('packer').sync()
 	end
 end
 local packer_vscode = function()
+	local use = use
 	use {
         'nvim-treesitter/nvim-treesitter',
         run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,

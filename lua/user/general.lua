@@ -15,6 +15,7 @@ set.updatetime = 300
 set.history = 1000
 set.mouse = "a"
 set.scrolloff = 5
+set.shell = "fish"
 
 -- For me, keeping lines shorter than 100 characters is a good practice
 set.colorcolumn = "100"
@@ -84,6 +85,7 @@ end
 Usercmd("RunPython", "!python %", {})
 Usercmd("RunGo", "!go run %", {})
 Usercmd("RunBash", "!%", {})
+Usercmd("RunJS", "!node %", {})
 
 -- Exam mode
 Usercmd(

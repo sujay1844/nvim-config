@@ -4,6 +4,22 @@
 			{
 				"language": "all",
 				"path": "./snippets-all.json"
+			},
+			{
+				"language": "python",
+				"path": "./python.json"
+			},
+			{
+				"language": "bash",
+				"path": "./bash.json"
+			},
+			{
+				"language": "go",
+				"path": "./go.json"
+			},
+			{
+				"language": "lua",
+				"path": "./lua.json"
 			}
 		]
 	}
