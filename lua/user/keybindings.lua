@@ -9,8 +9,8 @@ local keybindings = function ()
 	map('n', '<leader>q', '<Cmd>q<CR>')
 
 	-- Create a new tab
-	map('n', '<C-t>', '<Cmd>tabnew<CR><Cmd>Telescope oldfiles<CR>')
-	map('i', '<C-t>', '<Esc><Cmd>tabnew<CR><Cmd>Telescope oldfiles<CR>')
+	map('n', '<C-t>', '<Cmd>tabnew<CR><Cmd>Telescope file_browser<CR>')
+	map('i', '<C-t>', '<Esc><Cmd>tabnew<CR><Cmd>Telescope file_browser<CR>')
 
 	-- Tab navigation
 	map({'n', 'i', 'v'}, '<A-h>', '<C-w>h')
