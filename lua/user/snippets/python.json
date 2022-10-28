@@ -3,5 +3,10 @@
 		"prefix": "shebang",
 		"body": "#!/usr/bin/env python",
 		"description": "Shebang for python"
+	},
+	"main": {
+		"prefix": "main",
+		"body": ["def main():", "\t$0", "", "if __name__ == '__main__':", "\tmain()"],
+		"description": "Wrap code in main function"
 	}
 }

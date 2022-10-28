@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "/home/sujay1844/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  ["gruvbox.nvim"] = {
+    loaded = true,
+    path = "/home/sujay1844/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
+    url = "https://github.com/ellisonleao/gruvbox.nvim"
+  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/home/sujay1844/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
@@ -133,6 +138,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/sujay1844/.local/share/nvim/site/pack/packer/start/neoscroll.nvim",
     url = "https://github.com/karb94/neoscroll.nvim"
+  },
+  nvim = {
+    loaded = true,
+    path = "/home/sujay1844/.local/share/nvim/site/pack/packer/start/nvim",
+    url = "https://github.com/catppuccin/nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
@@ -210,6 +220,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/sujay1844/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
+  },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "/home/sujay1844/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
   },
   ["vim-fugitive"] = {
     loaded = true,

@@ -36,7 +36,7 @@ local packer_nvim = function()
 	use 'wbthomason/packer.nvim'
 	-- :help packer
 
-	-- One Dark theme
+	-- Theme
 	-- use 'olimorris/onedarkpro.nvim'
 	use({
 	  "olimorris/onedarkpro.nvim",
@@ -45,6 +45,9 @@ local packer_nvim = function()
 		if status_ok then onedarkpro.setup() end
 	  end
 	})
+	use 'folke/tokyonight.nvim'
+	use 'catppuccin/nvim'
+	use 'ellisonleao/gruvbox.nvim'
 
 	-- LSP
 	use 'neovim/nvim-lspconfig'
