@@ -1,6 +1,7 @@
 local parsers = {
 	"bash",
 	"c",
+	"cpp",
 	"css",
 	"dockerfile",
 	"fish",
@@ -13,8 +14,8 @@ local parsers = {
 	"markdown_inline",
 	"python",
 	"regex",
-	"yaml",
 	"rust",
+	"yaml",
 }
 local status_ok, config = pcall(require, "nvim-treesitter.configs")
 if not status_ok then return end
