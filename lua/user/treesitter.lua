@@ -1,29 +1,10 @@
-local parsers = {
-	"bash",
-	"c",
-	"cpp",
-	"css",
-	"dockerfile",
-	"fish",
-	"go",
-	"html",
-	"javascript",
-	"json",
-	"lua",
-	"markdown",
-	"markdown_inline",
-	"python",
-	"regex",
-	"rust",
-	"yaml",
-}
 local status_ok, config = pcall(require, "nvim-treesitter.configs")
 if not status_ok then return end
 config.setup {
-	ensure_installed = parsers,
 	highlight = { enable = true },
 	indent = { enable = true },
-	autotag = { enable = true }
+	autotag = { enable = true },
+	rainbow = { enable = true}
 }
 
 -- Context aware folding using Treesitter

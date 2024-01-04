@@ -134,10 +134,10 @@ _G.packer_plugins = {
     path = "/home/sujay1844/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
-  ["neoscroll.nvim"] = {
+  ["mason.nvim"] = {
     loaded = true,
-    path = "/home/sujay1844/.local/share/nvim/site/pack/packer/start/neoscroll.nvim",
-    url = "https://github.com/karb94/neoscroll.nvim"
+    path = "/home/sujay1844/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    url = "https://github.com/williamboman/mason.nvim"
   },
   nvim = {
     loaded = true,
@@ -159,11 +159,6 @@ _G.packer_plugins = {
     path = "/home/sujay1844/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
     url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
-  ["nvim-lsp-installer"] = {
-    loaded = true,
-    path = "/home/sujay1844/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
-    url = "https://github.com/williamboman/nvim-lsp-installer"
-  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/sujay1844/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
@@ -178,6 +173,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/sujay1844/.local/share/nvim/site/pack/packer/start/nvim-treesitter-context",
     url = "https://github.com/nvim-treesitter/nvim-treesitter-context"
+  },
+  ["nvim-ts-rainbow"] = {
+    loaded = true,
+    path = "/home/sujay1844/.local/share/nvim/site/pack/packer/start/nvim-ts-rainbow",
+    url = "https://github.com/p00f/nvim-ts-rainbow"
   },
   ["nvim-web-devicons"] = {
     loaded = true,

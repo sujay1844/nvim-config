@@ -27,9 +27,10 @@ set.clipboard = 'unnamedplus'
 set.laststatus = 3
 
 -- Tab
-set.tabstop = 4
-set.softtabstop = 4
-set.shiftwidth = 4
+local tabsize = 4
+set.tabstop = tabsize
+set.softtabstop = tabsize
+set.shiftwidth = tabsize
 --set.expandtab = true
 
 -- Persistent-undo
@@ -45,10 +46,10 @@ api.nvim_create_autocmd(
 -- Go to last cursor position
 api.nvim_create_autocmd(
 	"BufReadPost",
-    {
+	{
 		command = [[ if line("'\"") > 1 && line("'\"") <= line("$") | execute "normal! g`\"" | endif ]]
 	}
-  )
+)
 
 -- Close help windows with q
 api.nvim_create_autocmd(
@@ -78,14 +79,12 @@ api.nvim_create_autocmd(
 vim.g.do_filetype_lua = 1
 -- vim.g.did_load_filetypes = 0
 
-function Usercmd(keyword, cmd, opts)
-	vim.api.nvim_create_user_command(keyword, cmd, opts)
-end
-
-Usercmd("RunPython", "!python %", {})
-Usercmd("RunGo", "!go run %", {})
-Usercmd("RunBash", "!%", {})
-Usercmd("RunJS", "!node %", {})
+local Usercmd = vim.api.nvim_create_user_command;
+Usercmd("RunPython", "!python %", {});
+Usercmd("RunGo", "!go run %", {});
+Usercmd("RunBash", "!%", {});
+Usercmd("RunJS", "!node %", {});
+Usercmd( "RunC", "!gcc % && ./a.out", {});
 
 -- Exam mode
 Usercmd(

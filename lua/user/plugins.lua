@@ -51,7 +51,7 @@ local packer_nvim = function()
 
 	-- LSP
 	use 'neovim/nvim-lspconfig'
-	use 'williamboman/nvim-lsp-installer'
+	use 'williamboman/mason.nvim'
 	-- :help lspconfig
 
 	-- Autocomplete
@@ -84,7 +84,7 @@ local packer_nvim = function()
 
 	-- Icons
 	use 'kyazdani42/nvim-web-devicons'
-	--use 'kyazdani42/nvim-tree.lua'
+	-- use 'kyazdani42/nvim-tree.lua'
 
 	-- Lualine
 	use 'nvim-lualine/lualine.nvim'
@@ -105,9 +105,6 @@ local packer_nvim = function()
 	-- Indent guides
 	use 'lukas-reineke/indent-blankline.nvim'
 
-	-- Smooth scrolling
-	use 'karb94/neoscroll.nvim'
-
 	-- Tmux integration
 	use 'christoomey/vim-tmux-navigator'
 
@@ -122,6 +119,8 @@ local packer_nvim = function()
 		if status_ok then toggleterm.setup() end
 	  end
 	}
+
+	use 'p00f/nvim-ts-rainbow'
 
 	-- Automatically set up packer for first time use
 	if packer_bootstrap then
