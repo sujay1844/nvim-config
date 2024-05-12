@@ -20,6 +20,7 @@ local plugins = function ()
 	require("user.scroll")
 	require("user.telescope")
 	require("user.toggleterm")
+	require("user.lspconfig")
 
 	-- Display hex colors
 	local status_ok, colorizer = pcall(require, "colorizer")

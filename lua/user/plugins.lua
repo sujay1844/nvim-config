@@ -50,8 +50,11 @@ local packer_nvim = function()
 	use 'ellisonleao/gruvbox.nvim'
 
 	-- LSP
-	use 'neovim/nvim-lspconfig'
-	use 'williamboman/mason.nvim'
+	use {
+		"williamboman/mason.nvim",
+		"williamboman/mason-lspconfig.nvim",
+		"neovim/nvim-lspconfig",
+	}
 	-- :help lspconfig
 
 	-- Autocomplete
